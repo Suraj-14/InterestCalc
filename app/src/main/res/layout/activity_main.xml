@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap= "false"
+        app:cardElevation="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="INTEREST CALCULATOR"
+            android:textColor="@color/colorblue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card1"
+                android:layout_margin="10dp"
+                android:background="@color/colorback"
+                app:cardCornerRadius="30dp"
+                app:cardPreventCornerOverlap= "false"
+                app:cardElevation="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap= "false"
+        app:cardElevation="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Given Date : "
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="choose"
+        android:textColor="@color/colorblue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/dtpicker1"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/date"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="5dp">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Return Date : "
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_date1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorblue"
+        android:text="choose"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/dtpicker2"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/date"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card2"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap= "false"
+        app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Amount : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/balance"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:hint="eg: 5000.60"
+                    android:digits="0123456789,."
+                    android:textColor="@color/colorblue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card3"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap= "false"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="interest (%) : "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/intrest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:digits="0123456789,."
+                android:gravity="center"
+                android:hint="eg: 2.5 %"
+                android:inputType="number"
+                android:textColor="@color/colorblue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardPreventCornerOverlap = "false"
+        card_view:cardElevation="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card3"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+            app:cardPreventCornerOverlap= "false"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Select the Interest Basis : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <!--<RadioGroup
+                    android:id="@+id/radiogroup_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="UnknownId">
+
+                    <RadioButton
+                        android:id="@+id/monthly"
+                        android:layout_weight="1"
+                        android:layout_width="113dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="Month" />
+
+                    <RadioButton
+                        android:id="@+id/yearly"
+                        android:layout_weight="1"
+                        android:layout_width="113dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="Year" />
+
+                </RadioGroup>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp">
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:switchMinWidth="56dp"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Monthly"
+                        android:checked="false"
+                        android:textOff="M"
+                        android:textOn="Y"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/switch1"
+                        android:layout_marginTop="5dp"
+                        android:text="Yearly "
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card3"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap= "false"
+        app:cardElevation="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:text="Knowing the Details : "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                tools:ignore="UnknownId">
+
+                <RadioButton
+                    android:id="@+id/month"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Month" />
+                <RadioButton
+                    android:id="@+id/day"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Day" />
+                <RadioButton
+                    android:id="@+id/year"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Year" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card3"
+        android:layout_margin="10dp"
+        android:background="#DD749B"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardPreventCornerOverlap = "false"
+        card_view:cardElevation="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:background="#DD749B"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/calculate"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A8B2E6"
+                android:text="Calculate"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:background="#A8B2E6"
+                android:layout_weight="1"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+    <ImageView
+
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/bottompng"/>
+
+
+</RelativeLayout>
